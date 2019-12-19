@@ -6,11 +6,22 @@ public class ProblemNr2
 	{
 		int[] arr = {1, 2, 3, 4, 5};
 		int prod = 1;
+		
 		for (int i : arr)
 		{
 			prod *= i;
 		}
-		System.out.println(prod);
+		
+		int[] newarr = new int[arr.length];
+		for(int i = 0; i < arr.length; i++)
+		{
+			newarr[i] = prod/arr[i];
+		}
+		
+		for (int i : newarr)
+		{
+			System.out.println(i);
+		}
 	}
 	
 }
