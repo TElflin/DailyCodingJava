@@ -1,6 +1,6 @@
-package pl.daliycodingproblem.nr2;
+package pl.daliycodingproblem;
 
-public class ProducOfTableExceptI
+public class ProblemNr2
 {
 	public static void main(String[] args)
 	{
