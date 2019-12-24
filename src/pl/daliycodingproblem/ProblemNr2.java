@@ -1,24 +1,31 @@
 package pl.daliycodingproblem;
 
+import java.util.Arrays;
+import java.util.Collections;
+
+
 public class ProblemNr2
 {
 	public static void main(String[] args)
 	{
-		int[] arr = {1, 2, 3, 4, 5};
+		int[] input = {1, 2, 3, 4, 5};
+		int[] product = new int[input.length];
 		int prod = 1;
 		
-		for (int i : arr)
+		for (int i = input.length -1; i >=0; i-- )
 		{
-			prod *= i;
+			product[i] = prod;
+			prod *= input[i];
 		}
 		
-		int[] newarr = new int[arr.length];
-		for(int i = 0; i < arr.length; i++)
+		prod =1;
+		for(int i = 0; i < product.length; i++)
 		{
-			newarr[i] = prod/arr[i];
+			product[i] *= prod;
+			prod *= input[i];
 		}
 		
-		for (int i : newarr)
+		for (int i : product)
 		{
 			System.out.println(i);
 		}
