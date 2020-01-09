@@ -1,8 +1,5 @@
 package pl.daliycodingproblem;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 
 public class ProblemNr2
 {
